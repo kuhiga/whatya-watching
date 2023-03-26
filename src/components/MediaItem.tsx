@@ -13,7 +13,7 @@ export const MediaItem = ({ image, title, backgroundColor }: SquareProps) => {
       role="group"
       position="relative"
       textAlign="center"
-      rounded="md"
+      rounded="lg"
       w={200}
       pl={3}
       pr={7}

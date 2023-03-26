@@ -15,7 +15,7 @@ const mediaList: Media[] = [
     id: '1',
     title: 'doraemon',
     image:
-      'https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg',
+      'https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png',
     column: ColumnType.TO_WATCH,
   },
   {

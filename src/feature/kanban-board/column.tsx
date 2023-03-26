@@ -1,7 +1,7 @@
 import { Chip } from '@/src/components/Chip';
 import { Box, Heading, Stack } from '@chakra-ui/react';
-import { MediaItem } from '../../components/MediaItem';
 import { ColumnType, Media } from '../../utils';
+import { MediaTask } from './MediaTask';
 
 const ColumnColorScheme: Record<ColumnType, string> = {
   'To Watch': 'gray',
@@ -18,11 +18,11 @@ export const Column = ({
   mediaList: Media[];
 }) => {
   const columnMedias = mediaList.map((media, index) => (
-    <MediaItem
+    <MediaTask
       key={index}
       title={media.title}
       image={media.image}
-      backgroundColor="green"
+      index={index}
     />
   ));
   return (
