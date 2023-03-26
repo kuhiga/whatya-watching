@@ -9,7 +9,7 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>NextJs Fullstack App Template</title>
+        <title>Whatya Watching?</title>
       </Head>
       <CacheProvider>
         <ChakraProvider>
