@@ -9,13 +9,16 @@
     "Chakra",
     "commitlint",
     "githubusercontent",
+    "kanban",
     "mkdirp",
     "streetsidesoftware",
     "tsmerge",
     "unoptimized",
+    "usehooks",
     "Viewports",
     "visualstudio",
     "vsmarketplacebadge",
+    "Whatcha",
     "whatya"
   ],
   "ignorePaths": [
@@ -23,7 +26,8 @@
     ".husky/*",
     "node_modules/*",
     ".next/*",
-    "**/.vscode/*"
+    "**/.vscode/*",
+    "package.json"
   ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.

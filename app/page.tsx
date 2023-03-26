@@ -1,9 +1,11 @@
-/* eslint-disable no-unused-vars */
-import { Inter } from 'next/font/google';
+'use client';
+import { Board } from '@/src/feature';
 import styles from './page.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export default function Home() {
-  return <main className={styles.main}>Whatya Watching</main>;
+  return (
+    <main className={styles.main}>
+      <Board />
+    </main>
+  );
 }
