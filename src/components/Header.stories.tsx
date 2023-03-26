@@ -14,5 +14,5 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  title: 'Whatya Watching?',
+  title: '📺Whatya-Watching',
 };

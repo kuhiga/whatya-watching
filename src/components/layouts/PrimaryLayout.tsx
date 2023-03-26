@@ -8,7 +8,7 @@ export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
     <Flex flexDir="column">
-      <Header title={'Board'} backgroundColor="#1e1e1e" />
+      <Header title={'📺Whatya-Watching'} backgroundColor="#2e2d30" />
       <main>{children}</main>
     </Flex>
   );

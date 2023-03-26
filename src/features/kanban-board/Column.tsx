@@ -26,15 +26,14 @@ export const Column = ({
     />
   ));
   return (
-    <Box p={5} maxW={250} alignItems="center " bgColor="#2e2d30">
-      <Heading
-        fontSize="md"
-        mb={4}
-        letterSpacing="wide"
-        justifyContent="center"
-        alignItems="center"
-        display="flex"
-      >
+    <Box
+      p={5}
+      maxW={250}
+      alignItems="center "
+      bgColor="#2e2d30"
+      borderRadius="2xl"
+    >
+      <Heading fontSize="md" mb={4} p={2} letterSpacing="wide">
         <Chip label={column as string} color={ColumnColorScheme[column]} />
       </Heading>
       <Stack

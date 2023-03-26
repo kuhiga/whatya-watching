@@ -1,7 +1,7 @@
 import PrimaryLayout from '@/src/components/layouts/PrimaryLayout';
-import { Board } from '@/src/feature';
+import { Board } from '@/src/features';
 import { CacheProvider } from '@chakra-ui/next-js';
-import { Box, ChakraProvider } from '@chakra-ui/react';
+import { Box, Center, ChakraProvider } from '@chakra-ui/react';
 import Head from 'next/head';
 import { NextPageWithLayout } from './pages';
 
@@ -13,7 +13,9 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <CacheProvider>
         <ChakraProvider>
-          <Board />
+          <Center>
+            <Board />
+          </Center>
         </ChakraProvider>
       </CacheProvider>
     </Box>
