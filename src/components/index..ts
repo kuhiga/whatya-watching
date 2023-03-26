@@ -1,1 +1,1 @@
-export * from '../feature/kanban-board/board';
+export * from './layouts';

@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  reactStrictMode: true,
+  images: {
+    domains: [],
+  },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+    // localeDetection: false,
   },
 };
 

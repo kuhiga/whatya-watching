@@ -1,5 +1,3 @@
-'use client';
-
 import { SimpleGrid } from '@chakra-ui/react';
 
 import { ColumnType, Media } from '../../utils';

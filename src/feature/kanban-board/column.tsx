@@ -1,4 +1,3 @@
-'use client';
 import { AddIcon } from '@chakra-ui/icons';
 import { Badge, Box, Heading, IconButton, Stack } from '@chakra-ui/react';
 import { ColumnType, Media } from '../../utils';
