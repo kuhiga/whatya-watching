@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use client';
 import { Box, Flex, Image } from '@chakra-ui/react';
 import { Media } from '../../utils';

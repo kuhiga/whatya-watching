@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { useLocalStorage } from 'usehooks-ts';
 import { v4 as uuidv4 } from 'uuid';
 import { ColumnType, Media } from '../utils';
 
 export const useMediaCollection = () => {
-  // eslint-disable-next-line no-unused-vars
   return useLocalStorage<{ [key in ColumnType]: Media[] }>('medias', {
     'To Watch': [
       {
