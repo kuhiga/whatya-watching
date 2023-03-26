@@ -1,4 +1,4 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { Center, SimpleGrid } from '@chakra-ui/react';
 
 import { ColumnType, Media } from '../../utils';
 import { Column } from './Column';
@@ -31,10 +31,18 @@ export const Board = () => {
   return (
     <>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 16, md: 4 }}>
-        <Column column={ColumnType.TO_WATCH} mediaList={mediaList} />
-        <Column column={ColumnType.IN_PROGRESS} mediaList={mediaList} />
-        <Column column={ColumnType.COMPLETED} mediaList={mediaList} />
-        <Column column={ColumnType.PARKED} mediaList={mediaList} />
+        <Center>
+          <Column column={ColumnType.TO_WATCH} mediaList={mediaList} />
+        </Center>
+        <Center>
+          <Column column={ColumnType.IN_PROGRESS} mediaList={mediaList} />
+        </Center>
+        <Center>
+          <Column column={ColumnType.COMPLETED} mediaList={mediaList} />
+        </Center>
+        <Center>
+          <Column column={ColumnType.PARKED} mediaList={mediaList} />
+        </Center>
       </SimpleGrid>
     </>
   );

@@ -1,4 +1,3 @@
-import { AddButton } from '@/src/components/Buttons';
 import { Chip } from '@/src/components/Chip';
 import { Box, Heading, Stack } from '@chakra-ui/react';
 import { MediaItem } from '../../components/MediaItem';
@@ -27,7 +26,7 @@ export const Column = ({
     />
   ));
   return (
-    <Box p={5}>
+    <Box p={5} maxW={250} alignItems="center">
       <Heading
         fontSize="md"
         mb={4}
@@ -38,7 +37,6 @@ export const Column = ({
       >
         <Chip label={column as string} color={ColumnColorScheme[column]} />
       </Heading>
-      <AddButton />
       <Stack
         maxW={250}
         minH="70vh"
