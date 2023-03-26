@@ -26,7 +26,7 @@ export const Column = ({
     />
   ));
   return (
-    <Box p={5} maxW={250} alignItems="center">
+    <Box p={5} maxW={250} alignItems="center " bgColor="#2e2d30">
       <Heading
         fontSize="md"
         mb={4}
@@ -40,13 +40,12 @@ export const Column = ({
       <Stack
         maxW={250}
         minH="70vh"
-        direction={{ base: 'row', md: 'column' }}
+        direction={{ base: 'column', md: 'column' }}
         h={{ base: 300, md: '85%' }}
-        p={4}
+        p={2}
         mt={2}
         alignItems="center"
         spacing={4}
-        bgColor={'gray.50'}
         rounded="lg"
         boxShadow="md"
         overflowX="hidden"

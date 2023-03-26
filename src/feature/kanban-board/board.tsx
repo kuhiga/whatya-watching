@@ -1,4 +1,4 @@
-import { Center, SimpleGrid } from '@chakra-ui/react';
+import { Center, Flex, SimpleGrid } from '@chakra-ui/react';
 
 import { ColumnType, Media } from '../../utils';
 import { Column } from './Column';
@@ -29,7 +29,7 @@ const mediaList: Media[] = [
 
 export const Board = () => {
   return (
-    <>
+    <Flex justifyContent="space-around" p="50">
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 16, md: 4 }}>
         <Center>
           <Column column={ColumnType.TO_WATCH} mediaList={mediaList} />
@@ -44,6 +44,6 @@ export const Board = () => {
           <Column column={ColumnType.PARKED} mediaList={mediaList} />
         </Center>
       </SimpleGrid>
-    </>
+    </Flex>
   );
 };

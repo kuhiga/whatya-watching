@@ -1,3 +1,4 @@
+import { Flex } from '@chakra-ui/react';
 import { Header } from '../Header';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
@@ -6,10 +7,10 @@ export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
 
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
-    <>
-      <Header title={'Whatya Watching?'} />
+    <Flex flexDir="column">
+      <Header title={'Board'} backgroundColor="#1e1e1e" />
       <main>{children}</main>
-    </>
+    </Flex>
   );
 };
 
