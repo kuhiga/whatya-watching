@@ -7,7 +7,7 @@ export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header title={'Whatya Watching?'} />
       <main>{children}</main>
     </>
   );

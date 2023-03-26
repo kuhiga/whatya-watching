@@ -1,18 +1,19 @@
 /* eslint-disable no-unused-vars */
 import { Box, Flex, Image } from '@chakra-ui/react';
-import { Media } from '../../utils';
 
 type SquareProps = {
-  index: number;
-  media: Media;
+  image: string;
+  title: string;
+  backgroundColor: string;
 };
-export const Square = ({ index, media }: SquareProps) => {
+export const MediaItem = ({ image, title, backgroundColor }: SquareProps) => {
   return (
     <Box
       as="div"
       role="group"
       position="relative"
-      rounded="lg"
+      textAlign="center"
+      rounded="md"
       w={200}
       pl={3}
       pr={7}
@@ -20,11 +21,11 @@ export const Square = ({ index, media }: SquareProps) => {
       pb={1}
       boxShadow="xl"
       cursor="grab"
-      bgColor="red.500"
+      bgColor={backgroundColor}
     >
       <Flex direction="column">
-        <Image maxHeight="150px" src={media.image} alt={media.title} />
-        <Box> {media.title}</Box>
+        <Image maxHeight="150px" src={image} alt={title} />
+        <Box> {title}</Box>
       </Flex>
     </Box>
   );

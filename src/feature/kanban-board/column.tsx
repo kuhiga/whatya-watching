@@ -1,7 +1,8 @@
-import { AddIcon } from '@chakra-ui/icons';
-import { Badge, Box, Heading, IconButton, Stack } from '@chakra-ui/react';
+import { AddButton } from '@/src/components/Buttons';
+import { Chip } from '@/src/components/Chip';
+import { Box, Heading, Stack } from '@chakra-ui/react';
+import { MediaItem } from '../../components/MediaItem';
 import { ColumnType, Media } from '../../utils';
-import { Square } from './square';
 
 const ColumnColorScheme: Record<ColumnType, string> = {
   'To Watch': 'gray',
@@ -18,42 +19,40 @@ export const Column = ({
   mediaList: Media[];
 }) => {
   const columnMedias = mediaList.map((media, index) => (
-    <Square key={index} index={index} media={media} />
+    <MediaItem
+      key={index}
+      title={media.title}
+      image={media.image}
+      backgroundColor="green"
+    />
   ));
   return (
-    <Box>
-      <Heading fontSize="md" mb={4} letterSpacing="wide">
-        <Badge
-          px={2}
-          py={1}
-          rounded="lg"
-          colorScheme={ColumnColorScheme[column]}
-        >
-          {column}
-        </Badge>
+    <Box p={5}>
+      <Heading
+        fontSize="md"
+        mb={4}
+        letterSpacing="wide"
+        justifyContent="center"
+        alignItems="center"
+        display="flex"
+      >
+        <Chip label={column as string} color={ColumnColorScheme[column]} />
       </Heading>
-      <IconButton
-        size="xs"
-        w="full"
-        color={'gray.500'}
-        bgColor={'gray.100'}
-        _hover={{ bgColor: 'gray.200' }}
-        py={2}
-        variant="solid"
-        colorScheme="black"
-        aria-label="add-media"
-        icon={<AddIcon />}
-      ></IconButton>
+      <AddButton />
       <Stack
+        maxW={250}
+        minH="70vh"
         direction={{ base: 'row', md: 'column' }}
         h={{ base: 300, md: '85%' }}
         p={4}
         mt={2}
+        alignItems="center"
         spacing={4}
         bgColor={'gray.50'}
         rounded="lg"
         boxShadow="md"
-        overflow="auto"
+        overflowX="hidden"
+        overflowY="auto"
       >
         {columnMedias}
       </Stack>

@@ -1,7 +1,7 @@
 import { SimpleGrid } from '@chakra-ui/react';
 
 import { ColumnType, Media } from '../../utils';
-import { Column } from './column';
+import { Column } from './Column';
 
 const mediaList: Media[] = [
   {
@@ -18,7 +18,15 @@ const mediaList: Media[] = [
       'https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg',
     column: ColumnType.TO_WATCH,
   },
+  {
+    id: '3',
+    title: 'sponge bob',
+    image:
+      'https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg',
+    column: ColumnType.TO_WATCH,
+  },
 ];
+
 export const Board = () => {
   return (
     <>
