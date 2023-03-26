@@ -4,6 +4,23 @@ https://egghead.io/lessons/react-course-introduction-beautiful-and-accessible-dr
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Whatya Watching
+This app will be able to track what movie/show you are currently watching.
+tech used so far: Next 13, React, TypeScript
+possible features:
+- ability to add show / movie
+- track what episode I'm currently on
+- search for shows/movies via movie db api / add to board
+- drag items between columns
+- user authentication
+- store board on user database
+- progress bar showing on how much show is complete
+- modal will show image, description of show, length, etc
+- ability to follow other users and their board
+- to watch, in progress, completed, parked columns
+- add shows/movies to backlog
+- ability to rate shows/movies
+
 ## Getting Started
 
 First, run the development server:
