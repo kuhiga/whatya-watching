@@ -9,7 +9,7 @@ const Home: NextPageWithLayout = () => {
   return (
     <Box bgColor="#1e1e1e">
       <Head>
-        <title>Whatya Watching?</title>
+        <title>WyW?</title>
       </Head>
       <CacheProvider>
         <ChakraProvider>
