@@ -15,7 +15,13 @@
     "vsmarketplacebadge",
     "whatya"
   ],
-  "ignorePaths": [".vscode/*", ".husky/*", "node_modules/*", ".next/*"],
+  "ignorePaths": [
+    ".vscode/*",
+    ".husky/*",
+    "node_modules/*",
+    ".next/*",
+    "**/.vscode/*"
+  ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.
   // For example "hte" should be "the"
