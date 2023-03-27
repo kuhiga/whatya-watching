@@ -1,6 +1,7 @@
-import { Box, Center, Flex, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Box, Center, Flex, SimpleGrid } from '@chakra-ui/react';
 
 import { ColumnType, Media } from '../../utils';
+import { BoardHeader } from './BoardHeader';
 import { Column } from './Column';
 
 const mediaList: Media[] = [
@@ -31,11 +32,7 @@ export const Board = () => {
   return (
     <Box maxW={1500}>
       <Flex justifyContent="space-between" p="50" flexDir="column">
-        <Box pb="10">
-          <Heading color="BlackAlpha 50" size="md">
-            My Board
-          </Heading>
-        </Box>
+        <BoardHeader title="My Board" />
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 16, md: 4 }}>
           <Center>
             <Column column={ColumnType.TO_WATCH} mediaList={mediaList} />

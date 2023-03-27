@@ -7,6 +7,7 @@ import {
   ModalHeader,
   ModalOverlay,
 } from '@chakra-ui/react';
+
 import Image from 'next/image';
 import { MutableRefObject } from 'react';
 type ModalWindowProps = {
@@ -29,10 +30,9 @@ export const ModalWindow = ({
     isOpen={isOpen}
     onClose={onClose}
     size="xl"
-    colorScheme="#1e1e1e"
   >
     <ModalOverlay />
-    <ModalContent>
+    <ModalContent backgroundColor="#1e1e1e">
       <Flex justifyContent="center" flexDirection="column">
         <ModalHeader alignSelf="center">{title}</ModalHeader>
         <ModalCloseButton />

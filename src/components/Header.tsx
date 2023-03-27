@@ -1,4 +1,5 @@
-import { Avatar, Flex, Text } from '@chakra-ui/react';
+import { Avatar, Flex } from '@chakra-ui/react';
+import Link from 'next/link';
 
 type HeaderProps = {
   title: string;
@@ -22,14 +23,9 @@ export const Header = ({
         alignContent="center"
         alignItems="center"
       >
-        <Text>{title}</Text>
+        <Link href="/">{title}</Link>
         <Avatar size="sm" name="Kurt Higa" src="https://bit.ly/broken-link" />
       </Flex>
-      {/* <Flex alignItems="center" ml="5" mt="5">
-        <Heading color="BlackAlpha 50" size="md">
-          {title}
-        </Heading>
-      </Flex> */}
     </Flex>
   );
 };
