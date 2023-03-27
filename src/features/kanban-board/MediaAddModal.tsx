@@ -8,12 +8,12 @@ import {
   ModalOverlay,
 } from '@chakra-ui/react';
 import { MediaSearchForm } from './MediaSearchForm';
-type AddMediaModalProps = {
+type MediaAddModalProps = {
   isOpen: boolean;
   onClose: () => void;
 };
 
-export const AddMediaModal = ({ isOpen, onClose }: AddMediaModalProps) => {
+export const MediaAddModal = ({ isOpen, onClose }: MediaAddModalProps) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="xl" motionPreset="scale">
       <ModalOverlay backdropFilter="auto" backdropBlur="4px" />

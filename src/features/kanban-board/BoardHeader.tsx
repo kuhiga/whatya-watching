@@ -1,5 +1,6 @@
 import { Button, Heading, Stack, useDisclosure } from '@chakra-ui/react';
-import { AddMediaModal } from './AddMediaModal';
+import { MediaAddModal } from './MediaAddModal';
+
 type BoardHeaderProps = {
   title: string;
 };
@@ -21,7 +22,7 @@ export const BoardHeader = ({ title }: BoardHeaderProps) => {
       >
         Add Show/Movie
       </Button>
-      <AddMediaModal isOpen={isOpen} onClose={onClose} />
+      <MediaAddModal isOpen={isOpen} onClose={onClose} />
     </Stack>
   );
 };
